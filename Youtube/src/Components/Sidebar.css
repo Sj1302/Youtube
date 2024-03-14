@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
     background: #fff;
     width: 15%;
     height: 100vh;
@@ -6,7 +6,20 @@
     top: 0;
     padding-left: 2%;
     padding-top: 80px;
-    overflow: scroll;
+    overflow-y: scroll; 
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0; 
+    height: 0; 
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #ccc;
 }
 .shortcut-links img{
     width: 20px;
@@ -53,4 +66,9 @@
 .side-link.active img{
     padding-bottom: 2px;
     border-bottom: 3px solid red;
+}
+@media (max-width:900px){
+    .sidebar{
+        display: none;
+    }
 }
